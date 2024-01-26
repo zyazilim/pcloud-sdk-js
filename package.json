@@ -23,7 +23,7 @@
     "watch-web": "./node_modules/.bin/webpack -w",
     "build-node": "./node_modules/.bin/babel src --out-dir lib",
     "watch-node": "./node_modules/.bin/babel -w src --out-dir lib",
-    "prepublishOnly": "yarn build-node && yarn build-web",
+    "prepublishOnly": "yarn build-node",
     "start": "node server.js",
     "lint": "eslint src",
     "flow": "flow",
