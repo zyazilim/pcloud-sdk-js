@@ -29,7 +29,7 @@ export type ApiRequestOptions = {
   files?: Array<UploadFile>,
 };
 
-export type ApiMethodOptions = ApiRequestOptions & { apiServer?: string, apiProtocol?: string };
+export type ApiMethodOptions = ApiRequestOptions & { apiServer: string, apiProtocol?: string };
 
 export type RemoteUploadProgressFile = {
   url: string,
