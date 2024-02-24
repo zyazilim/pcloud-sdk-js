@@ -59,8 +59,8 @@ export default ({ client }: MethodApi) => (urls: string, folderid: number = 0, o
     .then(({ metadata }) => {
       stopProgress();
 
-      onFinish && onFinish({ metadata: metadata[0] });
-      return { metadata: metadata[0] };
+      onFinish && onFinish({ metadata });
+      return { metadata };
     })
     .catch(err => {
       stopProgress();
